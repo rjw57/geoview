@@ -1,0 +1,5 @@
+# GDAL may be installed via pip under Ubuntu 14.04 using the following
+# command line:
+# CPLUS_INCLUDE_PATH=/usr/include/gdal C_INCLUDE_PATH=/usr/include/gdal pip install GDAL==1.10.1
+GDAL==1.10.0
+

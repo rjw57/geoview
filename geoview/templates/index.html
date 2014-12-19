@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Geo view</title>
+        <link rel="stylesheet" href="http://openlayers.org/en/v3.0.0/css/ol.css">
+        <style>
+            #map { position: absolute; left: 0; right: 0; top: 0; bottom: 0; }
+        </style>
+    </head>
+    <body>
+        <div id="map" class="map"></div>
+        <script>
+            var datasetUrls = {{ datasets | tojson | safe }};
+            var MAP_PROJECTION_CODE = 'EPSG:{{ epsg }}';
+        </script>
+        <script src="http://openlayers.org/en/v3.0.0/build/ol.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.3.3/proj4.js"></script>
+        <script src="https://epsg.io/{{ epsg }}.js"></script>
+        <script src="/static/main.js"></script>
+    </body>
+</html>

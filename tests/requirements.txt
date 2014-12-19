@@ -1,0 +1,8 @@
+## Requirements for test suite
+
+# Obviously, we need the package we're testing
+geoview
+
+# Test framework and utilities
+nose
+mock
